@@ -1,0 +1,16 @@
+#picture{
+    width: 260px;
+    height: 200px;
+    
+    
+}
+
+.talking{
+    width: 300px;
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    display: inline-flex;
+  }

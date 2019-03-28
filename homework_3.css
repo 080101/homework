@@ -1,0 +1,13 @@
+.picture{
+    width: 204px;
+    height: 204px;
+}
+.talking{
+    font-size: 50px;
+
+}
+
+div{
+    display: inline-flex;
+    align-items: center;
+}
