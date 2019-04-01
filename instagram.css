@@ -1,0 +1,155 @@
+.up{
+    background-color: pink;
+    width: 100%;
+    z-index: 10;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    height: 80px;
+    justify-content: space-around;
+
+}
+
+.logo{
+    height: 85px;
+    width: 250px;
+}
+.upright{
+    float: right;
+    display: flex;
+
+    color: black;
+    justify-content: space-between;
+    width: 190px;
+}
+
+.upmiddle{
+    border: 1px solid white;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    align-content: center;
+    color: white;
+    align-items: center;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    margin-top: 100px;
+}
+.name{
+    font-size: 30px;
+    margin-right: 20px;
+}
+.icon{
+    
+    justify-content: space-around;
+    
+}
+
+
+
+.middleleft{
+    width: 150px; height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    margin-left: 90px;
+    margin-right: 80px;
+    
+}
+.middlerightup{
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+
+}
+.middlerightmiddle{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.photos{
+  margin-top: 75px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post_1{
+    border: 1px solid white;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 15px;
+   
+
+    
+}
+.post_2{
+    border: 1px solid white;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 15px;
+
+   
+}
+
+.post_3{
+    border: 1px solid white;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 15px;
+
+}
+
+.down {
+    
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+.bar{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: center;
+    color: black;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    padding: 10px;
+}
+.posting{
+    border: 2px solid gray;
+    padding: 10px;
+    align-items: center;
+    margin-right: 20px;
+}
+.IGTV{
+    border: 2px solid gray;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+.saved{
+    padding: 10px;
+    border: 2px solid gray;
+    margin-right: 20px;
+}
+.tagged{
+    padding: 10px;
+    margin-right: 20px;
+    border: 2px solid gray;
+}
+
+.photos{
+    display: flex;
+}
