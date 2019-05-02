@@ -1,0 +1,33 @@
+
+
+.boxes{
+    
+    border: 2px solid blanchedalmond;
+    padding: 10px;
+    display: flexbox;
+    
+}
+
+.homepage{
+    color: white;
+    font-size: 200px;
+    text-align: center;
+}   
+
+.one_box{
+    border: 2px solid rgb(221, 219, 219);
+    margin-bottom: 10px;
+    width: 100px;
+    text-align: center;
+    
+}
+
+.review{
+    color: gray;
+    font-size: 75px;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    text-align: end;
+}
+

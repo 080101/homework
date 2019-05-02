@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load staticfiles %}
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel = "stylesheet" type = "text/css" href = "{%static 'home.css' %}?v=0.5">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style = 'background-color : pink'>
+    
+    <h1 class = 'homepage'>BOOK REVIEW</h1>
+    
+    <h2 class = 'review'>List of Review</h2>
+        <div class = 'boxes'>
+        <ul>
+            {%for post in posts%}
+                <div class= 'one_box'>
+                <li><a href = "{%url 'detail' post.pk%}">{{post.title}}</a></li><br>{{post.price}}원<br>{{post.rating}}점
+                </div>
+            {%endfor%}
+  
+        </ul>
+       </div>
+    <a href = "{%url 'new'%}">Let's write review</a>
+    
+</body>
+</html>

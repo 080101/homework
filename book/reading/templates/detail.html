@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load staticfiles %}
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel = "stylesheet" type = "text/css" href = "{%static 'detail.css' %}?v=0.5">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style = 'background-color : pink'>
+    
+    <h1 class = 'homepage'>BOOK REVIEW</h1>
+    <div class = 'yoyo'>
+    <h2 class = 'title'><b>{{post.title}}</b></h2>
+    <h5 class = 'content'>{{post.contents}}</h5> 
+    <ul>
+        {%for comment in post.comments.all %}
+            <li>{{comment.content}}<br><a href = "{%url 'delete_comment' post.pk comment.pk%}">delete</a></li>
+        {%endfor%}
+    </ul>
+    <div class = 'commenting'>
+    <h5>평점 : {{post.rating}}</h5>
+    <h5>가격 : {{post.price}}</h5>
+    </div>
+    
+    <form method = "POST">
+        {%csrf_token%}
+        {{form.as_p}}
+        <input type = "submit"/><br>
+    </div>
+    </form>
+    <div class = 'menu'>
+    <a href = "{%url 'home'%}"> Back to the list </a><br>   
+    <a href = "{%url 'edit' post.pk%}">edit</a><br>
+    <a href = "{%url 'delete' post.pk%}">delete</a>
+    </div>
+        
